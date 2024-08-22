@@ -1,0 +1,113 @@
+﻿@{
+    // Set the title of the view
+    ViewBag.Title = "Classes";
+
+
+
+    // Define the days of the week
+    var daysOfWeek = new[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
+
+    // Create a dictionary representing the timetable for each day
+    var timetable = new Dictionary<string, List<string>>
+{
+        { "Monday", new List<string> { "Box Cubs (6-10yrs) 6:30pm - 7:30pm", "Registered Boxers 7pm - 8pm" } },
+        { "Tuesday", new List<string> { "Atlas Youth (11-17yrs) 6:30pm - 7:30pm", "Fit-Box (18+) 7:30pm - 9pm" } },
+        { "Wednesday", new List<string> { "Ladies Only 5:30pm - 6:30pm", "Box Cubs (6-10yrs) 6:30pm - 7:30pm", "Registered Boxers 7pm - 8:30pm" } },
+        { "Thursday", new List<string> { "Atlas Youth (11-17yrs) 6:30pm - 7:30pm", "Fit-Box (18+) 7:30pm - 9pm" } },
+        { "Friday", new List<string> { "Open Session (10-17yrs) 6pm - 7pm", "Fit-Box (18+) 7pm - 8pm", "Registered Boxers 8-9pm" } },
+        { "Saturday", new List<string> { "Open Session (Age 6+) 12pm - 1pm" } },
+        { "Sunday", new List<string> { "Closed" } }
+    };
+
+    // Determine the maximum number of activities in a single day
+    var maxActivities = timetable.Max(t => t.Value.Count);
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define the character encoding and viewport for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Internal CSS styles for table and elements -->
+    <style>
+        /* Make the table take up the full width and collapse borders */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        /* Style for table headers and data cells */
+        th, td {
+            border: 1px solid #ddd; /* Border for table cells */
+            padding: 8px; /* Padding inside table cells */
+            text-align: center; /* Center text alignment */
+        }
+
+        /* Background color for table headers */
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Alternate row background color for better readability */
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Hover effect for table rows */
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        h1 {
+            text-align: center; /* Centers the text horizontally */
+            margin-top: 20px; /* Optional: Adds some space above the title */
+            font-size: 2.5em; /* Optional: Adjusts the font size for better visibility */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Page header -->
+    <h1>Weekly Boxing Timetable </h1>
+
+    <br />
+
+    <!-- Table displaying the timetable -->
+    <table>
+        <thead>
+            <tr>
+                <!-- Table headers for each day of the week -->
+                @foreach (var day in daysOfWeek)
+                {
+                    <th>@day</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Iterate through each possible activity slot -->
+            @for (var i = 0; i < maxActivities; i++)
+            {
+                <tr>
+                    <!-- Iterate through each day to display activities -->
+                    @foreach (var day in daysOfWeek)
+                    {
+                        <td>
+                            <!-- Display activity if available, otherwise display a dash -->
+                            @if (timetable[day].Count > i)
+                            {
+                                @timetable[day][i]
+                            }
+                            else
+                            {
+                                @:-
+                            }
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

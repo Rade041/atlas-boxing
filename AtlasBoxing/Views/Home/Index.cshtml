@@ -1,0 +1,86 @@
+﻿@{
+    // Setting the title of the page in the ViewBag
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <!-- Main section for Atlas Boxing -->
+    <section class="row" aria-labelledby="AtlasBoxingTitle">
+        <br />
+        <!-- Description of the boxing club -->
+        <p class="lead">
+            We are Leicester's newest amateur boxing club with experienced coaches both male and female.
+            Accredited by England Boxing we cater for all levels.
+        </p>
+
+        <!-- Video section displaying a promotional video -->
+        <video width="70" height="400" autoplay loop muted>
+            <!-- Source of the video -->
+            <source src="~/Content/videos/Atlas-video - Made with Clipchamp.mp4" type="video/mp4">
+            <!-- Fallback message if the video is not supported -->
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <br />
+
+    <!-- Row containing different sections like Classes, Youth Community Hub, and Prices -->
+    <div class="row">
+        <!-- Section for Classes -->
+        <section class="col-md-4 d-flex flex-column justify-content-between" aria-labelledby="classesTitle">
+            <!-- Title for the Classes section -->
+            <h2 id="classesTitle">Classes</h2>
+            <!-- Description for Classes -->
+            <p>
+                Join our dynamic boxing classes, explore our schedules for competitive boxers & open classes.
+            </p>
+            <!-- Button aligned at the bottom -->
+            <a class="btn btn-outline-dark" href="@Url.Action("Classes", "Home")">Classes &raquo;</a>
+        </section>
+
+        <!-- Section for Youth Community Hub -->
+        <section class="col-md-4 d-flex flex-column justify-content-between" aria-labelledby="youthCommunityHubTitle">
+            <!-- Title for the Youth Community Hub section -->
+            <h2 id="youthCommunityHubTitle">Youth Community Hub</h2>
+            <!-- Description for Youth Community Hub -->
+            <p>
+                Discover our vibrant youth community hub, check out our engaging schedule,
+                and take advantage of our homework assistance program.
+            </p>
+            <!-- Button aligned at the bottom -->
+            <a class="btn btn-outline-dark" href="@Url.Action("YouthCommunityHub", "Home")">Learn more &raquo;</a>
+        </section>
+
+        <!-- Section for Pricing -->
+        <section class="col-md-4 d-flex flex-column justify-content-between" aria-labelledby="pricingTitle">
+            <!-- Title for the Pricing section -->
+            <h2 id="pricingTitle">Prices</h2>
+            <!-- Description for Pricing -->
+            <p>
+                Explore our competitive pricing for classes, community programs, and additional services—find out more.
+            </p>
+            <!-- Button aligned at the bottom -->
+            <a class="btn btn-outline-dark" href="@Url.Action("Pricing", "Home")">Pricing &raquo;</a>
+        </section>
+    </div>
+</main>
+
+<style>
+    /* Ensure sections use Flexbox and align content */
+    .d-flex {
+        display: flex;
+    }
+
+    .flex-column {
+        flex-direction: column;
+    }
+
+    .justify-content-between {
+        justify-content: space-between;
+    }
+
+    /* Optional: ensure all sections have similar height */
+    .row > section {
+        min-height: 200px; /* Adjust this value as needed */
+    }
+</style>

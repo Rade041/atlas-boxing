@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Eliza Lenjani\\source\\repos\\AtlasBoxing\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{981A7C9C-7FEE-4EAA-B4FE-099188A1FB35}|AtlasBoxing\\AtlasBoxing.csproj|c:\\users\\eliza lenjani\\source\\repos\\atlasboxing\\atlasboxing\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{981A7C9C-7FEE-4EAA-B4FE-099188A1FB35}|AtlasBoxing\\AtlasBoxing.csproj|solutionrelative:atlasboxing\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{981A7C9C-7FEE-4EAA-B4FE-099188A1FB35}|AtlasBoxing\\AtlasBoxing.csproj|C:\\Users\\Eliza Lenjani\\source\\repos\\AtlasBoxing\\atlasboxing\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{981A7C9C-7FEE-4EAA-B4FE-099188A1FB35}|AtlasBoxing\\AtlasBoxing.csproj|solutionrelative:atlasboxing\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{981A7C9C-7FEE-4EAA-B4FE-099188A1FB35}|AtlasBoxing\\AtlasBoxing.csproj|c:\\users\\eliza lenjani\\source\\repos\\atlasboxing\\atlasboxing\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{981A7C9C-7FEE-4EAA-B4FE-099188A1FB35}|AtlasBoxing\\AtlasBoxing.csproj|solutionrelative:atlasboxing\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{981A7C9C-7FEE-4EAA-B4FE-099188A1FB35}|AtlasBoxing\\AtlasBoxing.csproj|c:\\users\\eliza lenjani\\source\\repos\\atlasboxing\\atlasboxing\\views\\home\\youthcommunityhub.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{981A7C9C-7FEE-4EAA-B4FE-099188A1FB35}|AtlasBoxing\\AtlasBoxing.csproj|solutionrelative:atlasboxing\\views\\home\\youthcommunityhub.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "YouthCommunityHub.cshtml",
+              "DocumentMoniker": "C:\\Users\\Eliza Lenjani\\source\\repos\\AtlasBoxing\\AtlasBoxing\\Views\\Home\\YouthCommunityHub.cshtml",
+              "RelativeDocumentMoniker": "AtlasBoxing\\Views\\Home\\YouthCommunityHub.cshtml",
+              "ToolTip": "C:\\Users\\Eliza Lenjani\\source\\repos\\AtlasBoxing\\AtlasBoxing\\Views\\Home\\YouthCommunityHub.cshtml",
+              "RelativeToolTip": "AtlasBoxing\\Views\\Home\\YouthCommunityHub.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-19T12:51:30.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\Eliza Lenjani\\source\\repos\\AtlasBoxing\\AtlasBoxing\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "AtlasBoxing\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\Eliza Lenjani\\source\\repos\\AtlasBoxing\\AtlasBoxing\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "AtlasBoxing\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-19T09:57:44.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Eliza Lenjani\\source\\repos\\AtlasBoxing\\AtlasBoxing\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "AtlasBoxing\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Eliza Lenjani\\source\\repos\\AtlasBoxing\\AtlasBoxing\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "AtlasBoxing\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAUwCoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-06T12:24:34.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Site.css",
+              "DocumentMoniker": "C:\\Users\\Eliza Lenjani\\source\\repos\\AtlasBoxing\\AtlasBoxing\\Content\\Site.css",
+              "RelativeDocumentMoniker": "AtlasBoxing\\Content\\Site.css",
+              "ToolTip": "C:\\Users\\Eliza Lenjani\\source\\repos\\AtlasBoxing\\AtlasBoxing\\Content\\Site.css",
+              "RelativeToolTip": "AtlasBoxing\\Content\\Site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-08T17:26:22.042Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

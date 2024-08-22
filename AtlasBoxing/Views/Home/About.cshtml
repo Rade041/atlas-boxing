@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<div style="display: flex; justify-content: space-around; align-items: center; padding: 20px;">
+    <div style="flex: 0 0 40%; padding: 20px;">
+        <main aria-labelledby="title">
+
+            <h3>@ViewBag.Message</h3>
+            <br />
+            <p>
+                Atlas Boxing and Fitness Club was founded in 2018 by Aysha Limbada and Gary Lescott.
+                Aysha, inspired by her own transformative experience with boxing, envisioned a space that not only
+                taught the sport but also fostered community engagement and personal growth. Located in Leicester’s
+                Spinney Hills, the club aims to provide a safe environment for women and youth, offering a variety of
+                programs including fitness sessions, volunteer opportunities, and mental health support. Atlas serves as
+                a hub for physical and mental well-being, community support, and personal development.
+            </p>
+        </main>
+    </div>
+    <div style="flex: 0 0 60%; text-align: center; padding: 20px;">
+        <img src="@Url.Content("~/Content/images/atlas-group.jpg")" alt="ATLAS Group" style="height: 500px; width: 100%; border-radius: 15px;">
+    </div>
+</div>

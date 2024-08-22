@@ -1,0 +1,149 @@
+﻿@{
+    // Specifies the layout page to be used for this view
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<main>
+    <!-- Main title of the webpage -->
+    <h1> Youth Community Hub </h1> <br />
+
+    <!-- Introduction paragraph with details about the launch of the youth hub -->
+    <p>
+        We are pleased to announce the launch of Atlas Youth & Community Hub, starting Tuesday 19th March 2024!
+        Open to all ages, the youth hub encourages young people to socialize with their friends in a safe space.
+        With the help of experienced tutors, our Homework Catch-up Club provides free support for young people with their schoolwork.
+        All sessions will be supervised by our experienced Youth Workers.
+    </p>
+
+    <!-- Subheading for the available services -->
+    <h3> Our Services </h3>
+
+    <!-- Details about the available tutoring and activities -->
+    <p>
+        Our Homework Catch Up Club will be supervised by experienced tutors in English, Mathematics, and Science, providing
+        support in Key Stages 1, 2, 3 & GCSE.
+    </p>
+
+    <!-- List of available facilities and activities -->
+    <p>
+        - A safe space to socialize, relax, and have fun <br />
+        - Homework Catch-up Club <br />
+        - Mini library <br />
+        - Multi Games Table: Pool, Air Hockey, Table Tennis <br />
+        - Playstation <br />
+        - Arts and Crafts activities <br />
+        - Board Games <br />
+    </p>
+</main>
+
+<br />
+
+<head>
+    <!-- Inline CSS styling for layout and design -->
+    <style>
+        /* Creates a column layout with three equal-width sections */
+        .schedule-column {
+            float: left;
+            width: 33.33%;
+        }
+
+        /* Ensures content is cleared and elements are properly contained within rows */
+        .schedule-row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Styling for each schedule card */
+        .schedule-card {
+            border-radius: 9px;
+            background-color: #f9d9d9;
+            display: flex;
+            margin-top: 22px;
+            width: 100%;
+            flex-direction: column;
+            padding: 0 20px 41px;
+        }
+
+        /* Styling for the schedule day headers */
+        .schedule-header {
+            font-family: Inter, sans-serif;
+            border-radius: 8px;
+            background-color: #d9d9d9;
+            z-index: 10;
+            margin-top: -22px;
+            font-weight: 700;
+            white-space: nowrap;
+            justify-content: center;
+            padding: 14px 15px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Styling for the timing and activity details within each schedule card */
+        .schedule-details {
+            text-align: center;
+            font-family: Inter, sans-serif;
+            font-weight: 400;
+            align-self: center;
+            margin-top: 11px;
+        }
+
+        /* Styles for the main heading */
+        h1 {
+            text-align: center; /* Centers the text horizontally */
+            margin-top: 20px; /* Optional: Adds some space above the title */
+            font-size: 2.5em; /* Optional: Adjusts the font size for better visibility */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Container for the schedule cards -->
+    <div class="schedule-row">
+        <!-- Tuesday schedule card -->
+        <div class="schedule-column">
+            <div class="schedule-card">
+                <div class="schedule-header">
+                    Tuesday
+                </div>
+                <div class="schedule-details">
+                    6 - 8PM
+                    <br />
+                    FREE
+                </div>
+            </div>
+        </div>
+
+        <!-- Thursday schedule card -->
+        <div class="schedule-column">
+            <div class="schedule-card">
+                <div class="schedule-header">
+                    Thursday
+                </div>
+                <div class="schedule-details">
+                    6 - 8PM
+                    <br />
+                    Homework Catch-up Club
+                    <br />
+                    FREE
+                </div>
+            </div>
+        </div>
+
+        <!-- Saturday schedule card -->
+        <div class="schedule-column">
+            <div class="schedule-card">
+                <div class="schedule-header">
+                    Saturday
+                </div>
+                <div class="schedule-details">
+                    10AM - 12PM
+                    <br />
+                    FREE
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

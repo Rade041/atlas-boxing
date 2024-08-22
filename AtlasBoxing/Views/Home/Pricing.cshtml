@@ -1,0 +1,129 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1> Boxing Classes</h1>
+
+<br />
+
+<style>
+    .row {
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping if the container's width is exceeded */
+        justify-content: center; /* Center the row within the parent container */
+        gap: 10px; /* Smaller space between columns */
+        margin: 0 auto; /* Center the row itself if it's within a parent container */
+        max-width: 1000px; /* Optional: Set a max width for the row */
+    }
+
+    .column {
+        flex: 1 1 calc(50% - 10px); /* Adjusted gap size to 10px */
+        box-sizing: border-box;
+        margin: 10px 0; /* Vertical space between rows */
+    }
+
+    /* Style for the main container div element */
+    .div {
+        border-radius: 9px; /* Rounds the corners of the element */
+        background-color: #f9d9d9; /* Sets a light red background color */
+        display: flex; /* Makes the div a flex container */
+        margin-top: 22px; /* Adds space above the div */
+        flex-direction: column; /* Aligns children vertically */
+        padding: 0 20px 41px; /* Padding: no top, 20px left/right, 41px bottom */
+        width: 100%; /* Full width of the parent container */
+    }
+
+    /* Style for the inner header div element */
+    .div-2 {
+        font-family: Inter, sans-serif; /* Sets the font to Inter or sans-serif */
+        border-radius: 8px; /* Slightly rounds the corners */
+        background-color: #d9d9d9; /* Sets a light grey background color */
+        z-index: 10; /* Places this element above others, if they overlap */
+        margin-top: -22px; /* Negative margin moves this element up */
+        font-weight: 700; /* Makes the text bold */
+        white-space: nowrap; /* Prevents text from wrapping */
+        justify-content: center; /* Centers items along the main axis */
+        padding: 14px 15px; /* Padding inside the div: 14px top/bottom, 15px left/right */
+        display: flex; /* Flexbox layout */
+        align-items: center; /* Centers items along the cross axis */
+        text-align: center; /* Centers text inside the div */
+    }
+
+    /* Style for the text description div element */
+    .div-3 {
+        text-align: center; /* Centers the text horizontally */
+        font-family: Inter, sans-serif; /* Uses the Inter or sans-serif font */
+        font-weight: 400; /* Normal font weight */
+        align-self: center; /* Centers this element within its parent */
+        margin-top: 11px; /* Adds space above the element */
+    }
+    h1 {
+        text-align: center; /* Centers the text horizontally */
+        margin-top: 20px; /* Optional: Adds some space above the title */
+        font-size: 2.5em; /* Optional: Adjusts the font size for better visibility */
+    }
+</style>
+
+<body>
+    <!-- Main row container for the columns -->
+    <div class="row">
+        <!-- Column 1: Pricing information for "17 & Under" -->
+        <div class="column">
+            <div class="div">
+                <div class="div-2">
+                    17 & Under
+                </div>
+                <div class="div-3">
+                    PAYG: £4
+                    <br />
+                    Monthly: £25
+                </div>
+            </div>
+        </div>
+
+        <!-- Column 2: Pricing information for "18+" -->
+        <div class="column">
+            <div class="div">
+                <div class="div-2">
+                    18+
+                </div>
+                <div class="div-3">
+                    PAYG: £5.50
+                    <br />
+                    Monthly: £35
+                </div>
+            </div>
+        </div>
+
+        <!-- Column 3: Pricing information for "Registered Boxers" -->
+        <div class="column">
+            <div class="div">
+                <div class="div-2">
+                    Registered Boxers
+                </div>
+                <div class="div-3">
+                    PAYG: £5.50
+                    <br />
+                    Monthly: £25
+                </div>
+            </div>
+        </div>
+
+        <!-- Column 4: Pricing information for "Students" -->
+        <div class="column">
+            <div class="div">
+                <div class="div-2">
+                    Students
+                    <br />
+                    (with valid ID)
+                </div>
+                <div class="div-3">
+                    PAYG: £5.50
+                    <br />
+                    Monthly: £30
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
