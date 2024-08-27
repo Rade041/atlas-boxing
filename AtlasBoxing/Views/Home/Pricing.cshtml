@@ -3,78 +3,76 @@
 }
 
 
-<h1> Boxing Classes</h1>
+<h1>Boxing Classes</h1>
 
 <br />
 
 <style>
-    .row {
+    .pricing-grid {
         display: flex;
-        flex-wrap: wrap; /* Allow wrapping if the container's width is exceeded */
-        justify-content: center; /* Center the row within the parent container */
-        gap: 10px; /* Smaller space between columns */
-        margin: 0 auto; /* Center the row itself if it's within a parent container */
-        max-width: 1000px; /* Optional: Set a max width for the row */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin: 0 auto;
+        max-width: 1000px;
     }
 
-    .column {
-        flex: 1 1 calc(50% - 10px); /* Adjusted gap size to 10px */
+    .pricing-card {
+        flex: 1 1 calc(50% - 10px);
         box-sizing: border-box;
-        margin: 10px 0; /* Vertical space between rows */
+        margin: 10px 0;
     }
 
-    /* Style for the main container div element */
-    .div {
-        border-radius: 9px; /* Rounds the corners of the element */
-        background-color: #f9d9d9; /* Sets a light red background color */
-        display: flex; /* Makes the div a flex container */
-        margin-top: 22px; /* Adds space above the div */
-        flex-direction: column; /* Aligns children vertically */
-        padding: 0 20px 41px; /* Padding: no top, 20px left/right, 41px bottom */
-        width: 100%; /* Full width of the parent container */
+    .card-container {
+        border-radius: 9px;
+        background-color: #f9d9d9;
+        display: flex;
+        margin-top: 22px;
+        flex-direction: column;
+        padding: 0 20px 41px;
+        width: 100%;
     }
 
-    /* Style for the inner header div element */
-    .div-2 {
-        font-family: Inter, sans-serif; /* Sets the font to Inter or sans-serif */
-        border-radius: 8px; /* Slightly rounds the corners */
-        background-color: #d9d9d9; /* Sets a light grey background color */
-        z-index: 10; /* Places this element above others, if they overlap */
-        margin-top: -22px; /* Negative margin moves this element up */
-        font-weight: 700; /* Makes the text bold */
-        white-space: nowrap; /* Prevents text from wrapping */
-        justify-content: center; /* Centers items along the main axis */
-        padding: 14px 15px; /* Padding inside the div: 14px top/bottom, 15px left/right */
-        display: flex; /* Flexbox layout */
-        align-items: center; /* Centers items along the cross axis */
-        text-align: center; /* Centers text inside the div */
+    .card-header {
+        font-family: Inter, sans-serif;
+        border-radius: 8px;
+        background-color: #d9d9d9;
+        z-index: 10;
+        margin-top: -22px;
+        font-weight: 700;
+        white-space: nowrap;
+        justify-content: center;
+        padding: 14px 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
     }
 
-    /* Style for the text description div element */
-    .div-3 {
-        text-align: center; /* Centers the text horizontally */
-        font-family: Inter, sans-serif; /* Uses the Inter or sans-serif font */
-        font-weight: 400; /* Normal font weight */
-        align-self: center; /* Centers this element within its parent */
-        margin-top: 11px; /* Adds space above the element */
+    .card-description {
+        text-align: center;
+        font-family: Inter, sans-serif;
+        font-weight: 400;
+        align-self: center;
+        margin-top: 11px;
     }
+
     h1 {
-        text-align: center; /* Centers the text horizontally */
-        margin-top: 20px; /* Optional: Adds some space above the title */
-        font-size: 2.5em; /* Optional: Adjusts the font size for better visibility */
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2.5em;
     }
 </style>
 
 <body>
-    <!-- Main row container for the columns -->
-    <div class="row">
-        <!-- Column 1: Pricing information for "17 & Under" -->
-        <div class="column">
-            <div class="div">
-                <div class="div-2">
+    <!-- Main container for the pricing cards -->
+    <div class="pricing-grid">
+        <!-- Card 1: Pricing information for "17 & Under" -->
+        <div class="pricing-card">
+            <div class="card-container">
+                <div class="card-header">
                     17 & Under
                 </div>
-                <div class="div-3">
+                <div class="card-description">
                     PAYG: £4
                     <br />
                     Monthly: £25
@@ -82,13 +80,13 @@
             </div>
         </div>
 
-        <!-- Column 2: Pricing information for "18+" -->
-        <div class="column">
-            <div class="div">
-                <div class="div-2">
+        <!-- Card 2: Pricing information for "18+" -->
+        <div class="pricing-card">
+            <div class="card-container">
+                <div class="card-header">
                     18+
                 </div>
-                <div class="div-3">
+                <div class="card-description">
                     PAYG: £5.50
                     <br />
                     Monthly: £35
@@ -96,13 +94,13 @@
             </div>
         </div>
 
-        <!-- Column 3: Pricing information for "Registered Boxers" -->
-        <div class="column">
-            <div class="div">
-                <div class="div-2">
+        <!-- Card 3: Pricing information for "Registered Boxers" -->
+        <div class="pricing-card">
+            <div class="card-container">
+                <div class="card-header">
                     Registered Boxers
                 </div>
-                <div class="div-3">
+                <div class="card-description">
                     PAYG: £5.50
                     <br />
                     Monthly: £25
@@ -110,15 +108,15 @@
             </div>
         </div>
 
-        <!-- Column 4: Pricing information for "Students" -->
-        <div class="column">
-            <div class="div">
-                <div class="div-2">
+        <!-- Card 4: Pricing information for "Students" -->
+        <div class="pricing-card">
+            <div class="card-container">
+                <div class="card-header">
                     Students
                     <br />
                     (with valid ID)
                 </div>
-                <div class="div-3">
+                <div class="card-description">
                     PAYG: £5.50
                     <br />
                     Monthly: £30
