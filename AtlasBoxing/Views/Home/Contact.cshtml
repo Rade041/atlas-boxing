@@ -4,7 +4,8 @@
     <h3 style="text-align: center;">@ViewBag.Message</h3>
     <br />
 
-    <div class="container">
+    <!-- Wrapper for both the address and form containers -->
+    <div class="address-form-container">
         <!-- Address Section -->
         <div class="address-container">
             <address>
@@ -26,23 +27,22 @@
         </div>
 
         <!-- Contact Form with Centering and Box -->
-
         <div class="form-container">
             <h3>Send Us a Message</h3>
             <form method="post" action="@Url.Action("SendMessage", "Home")">
                 <div class="form-group">
                     <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="Name" required />
+                    <input type="text" id="name" name="Name" required class="form-input" />
                 </div>
                 <br />
                 <div class="form-group">
                     <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="Email" required />
+                    <input type="email" id="email" name="Email" required class="form-input" />
                 </div>
                 <br />
                 <div class="form-group">
                     <label for="message">Your Message:</label>
-                    <textarea id="message" name="Message" rows="5" required></textarea>
+                    <textarea id="message" name="Message" rows="5" required class="form-input"></textarea>
                 </div>
                 <br />
                 <button type="submit">Send Message</button>
@@ -51,29 +51,42 @@
     </div>
 </main>
 
-
 <style>
+    /* Main wrapper for centering the content */
     .address-form-container {
         display: flex;
-        justify-content: center;
-        min-height: 100vh; /* Center vertically */
-        padding: 0 20px;
+        justify-content: center; /* Centers horizontally */
+        align-items: flex-start; /* Aligns containers at the top */
+        min-height: 100vh;
+        padding: 20px;
         box-sizing: border-box;
     }
+
+    /* Address and Form Container Styles */
+    .address-container,
     .form-container {
-        width: 35%;
+        width: 40%; /* Adjust as needed */
+        margin: 0 20px; /* Adds space between the two containers */
+    }
+
+    /* Additional margin to push the address container higher */
+    .address-container {
+        margin-top: -20px; /* Adjust this value to control how much higher the address container appears */
+    }
+
+
+
+
+
+
+
+    /* Form styling */
+    .form-container {
         padding: 20px;
         border: 2px solid #ccc;
         border-radius: 10px;
         background-color: #f9f9f9;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        text-align: left;
-    }
-
-    .address-container {
-        width: 35%;
-        text-align: left;
-        padding: 20px;
     }
 
     .form-group {
@@ -87,14 +100,14 @@
 
     .form-input {
         width: 100%;
-        padding: 10px; 
+        padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
         box-sizing: border-box;
     }
 
     button[type="submit"] {
-        width: 45%;
+        width: 100%;
         padding: 10px;
         background-color: #007bff;
         color: white;
@@ -107,6 +120,4 @@
         button[type="submit"]:hover {
             background-color: #0056b3;
         }
-
-
 </style>
