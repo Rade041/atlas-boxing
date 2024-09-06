@@ -1,4 +1,9 @@
 ﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@{
     // Setting the title of the page in the ViewBag
     ViewBag.Title = "Home Page";
 }
@@ -35,7 +40,7 @@
                 Join our dynamic boxing classes, explore our schedules for competitive boxers & open classes.
             </p>
             <!-- Button aligned at the bottom -->
-            <a class="btn btn-outline-dark" href="@Url.Action("Classes", "Home")">Classes &raquo;</a>
+            <a class="btn btn-outline-dark mx-auto" href="@Url.Action("Classes", "Home")">Classes &raquo;</a>
         </section>
 
         <!-- Section for Youth Community Hub -->
@@ -48,7 +53,7 @@
                 and take advantage of our homework assistance program.
             </p>
             <!-- Button aligned at the bottom -->
-            <a class="btn btn-outline-dark" href="@Url.Action("YouthCommunityHub", "Home")">Learn more &raquo;</a>
+            <a class="btn btn-outline-dark mx-auto" href="@Url.Action("YouthCommunityHub", "Home")">Learn more &raquo;</a>
         </section>
 
         <!-- Section for Pricing -->
@@ -60,7 +65,7 @@
                 Explore our competitive pricing for classes, community programs, and additional services—find out more.
             </p>
             <!-- Button aligned at the bottom -->
-            <a class="btn btn-outline-dark" href="@Url.Action("Pricing", "Home")">Pricing &raquo;</a>
+            <a class="btn btn-outline-dark mx-auto" href="@Url.Action("Pricing", "Home")">Pricing &raquo;</a>
         </section>
     </div>
 </main>
@@ -79,8 +84,19 @@
         justify-content: space-between;
     }
 
+
     /* Optional: ensure all sections have similar height */
     .row > section {
         min-height: 200px; /* Adjust this value as needed */
+    }
+
+    /* Update button color */
+    .btn {
+        color: #000; /* White text color */
+        background-color: #C91616; /* Button background color */
+        border-color: #C91616; /* Border color */
+        padding: 5px 5px;
+        width: 210px;
+        margin: 0 auto; /* Center the button */
     }
 </style>

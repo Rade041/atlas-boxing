@@ -1,4 +1,4 @@
-﻿﻿ /* Set padding to keep content from hitting the edges */
+﻿
 .body-content {
     margin-top: 15px;
     padding-left: 15px;
@@ -20,17 +20,18 @@ textarea {
 }
 
 
-
 /* Footer styling */
 footer {
     display: flex !important; /* Align items in a horizontal row */
     justify-content: space-between; /* Space between copyright text and social icons */
     align-items: center; /* Vertically center the content */
     padding: 10px 20px; /* Padding for spacing */
-    background-color: #f8f9fa; /* Optional: Footer background color */
+    background-color: / /*#f8f9fa*/ #1C211D; /* Optional: Footer background color */
     box-sizing: border-box; /* Ensure padding is included in the element's total width/height */
     width: 100%; /* Ensure footer takes full width */
     position: relative;
+    bottom: 0; /* Aligns the footer to the bottom of the page */
+
 }
 
 /* Copyright styling for footer */
@@ -46,6 +47,7 @@ footer {
     margin-right: 20px; /* Ensure consistent spacing from the right end */
 }
 
+
     .social-media a {
         color: black; /* Set icon color to black */
         margin: 0 10px; /* Space between icons */
@@ -56,3 +58,8 @@ footer {
         .social-media a:hover {
             color: #C91616; /* Optional: Change color on hover */
         }
+
+
+
+
+

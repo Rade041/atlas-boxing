@@ -2,66 +2,74 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
+<!-- Heading for the page -->
 <h1>Boxing Classes</h1>
 
 <br />
 
+
 <style>
+    /* Container for the pricing cards, using Flexbox for layout */
     .pricing-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        margin: 0 auto;
-        max-width: 1000px;
+        display: flex; /* Aligns items in a row or column */
+        flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+        justify-content: center; /* Centers the content horizontally */
+        gap: 10px; /* Adds space between items */
+        margin: 0 auto; /* Centers the grid on the page */
+        max-width: 1000px; /* Limits the width of the grid */
     }
 
+    /* Individual pricing card styling */
     .pricing-card {
-        flex: 1 1 calc(50% - 10px);
-        box-sizing: border-box;
-        margin: 10px 0;
+        flex: 1 1 calc(50% - 10px); /* Each card takes up roughly half the width of its container, minus some gap */
+        box-sizing: border-box; /* Ensures padding and borders are included in the element's width and height */
+        margin: 10px 0; /* Adds vertical spacing between cards */
     }
 
+    /* Container for each card's content */
     .card-container {
-        border-radius: 9px;
-        background-color: #f9d9d9;
-        display: flex;
-        margin-top: 22px;
-        flex-direction: column;
-        padding: 0 20px 41px;
-        width: 100%;
+        border-radius: 9px; /* Rounds the corners of the card */
+        background-color: #d9d9d9; /* Light background color for the card */
+        display: flex; /* Flexbox for vertical alignment */
+        margin-top: 22px; /* Adds space above the card */
+        flex-direction: column; /* Stacks items inside the card vertically */
+        padding: 0 20px 41px; /* Adds padding inside the card (top-right-bottom-left) */
+        width: 80%; /* Ensures the card takes up full width within its container */
     }
 
+    /* Header section of each card */
     .card-header {
-        font-family: Inter, sans-serif;
-        border-radius: 8px;
-        background-color: #d9d9d9;
-        z-index: 10;
-        margin-top: -22px;
-        font-weight: 700;
-        white-space: nowrap;
-        justify-content: center;
-        padding: 14px 15px;
-        display: flex;
-        align-items: center;
-        text-align: center;
+        font-family: Inter, sans-serif; /* Font styling for the header */
+        border-radius: 9px; /* Rounds the corners of the header */
+        background-color: #939291; /* Gray background color for the header */
+        z-index: 10; /* Positions the header above other elements */
+        margin-top: -22px; /* Adjusts the header's position to overlap with the card */
+        font-weight: 700; /* Makes the text bold */
+        white-space: nowrap; /* Prevents text from wrapping to the next line */
+        justify-content: center; /* Centers the content within the header */
+        padding: 14px 15px; /* Adds padding inside the header (top-bottom, left-right) */
+        display: flex; /* Flexbox for horizontal alignment */
+        align-items: center; /* Vertically centers the content */
+        text-align: center; /* Centers text within the header */
     }
 
+    /* Description text inside the card */
     .card-description {
-        text-align: center;
-        font-family: Inter, sans-serif;
-        font-weight: 400;
-        align-self: center;
-        margin-top: 11px;
+        text-align: center; /* Centers the description text */
+        font-family: Inter, sans-serif; /* Font styling for the description */
+        font-weight: 400; /* Normal weight for the text */
+        align-self: center; /* Centers the element within the flex container */
+        margin-top: 11px; /* Adds space above the description */
     }
 
+    /* Styling for the main page heading */
     h1 {
-        text-align: center;
-        margin-top: 20px;
-        font-size: 2.5em;
+        text-align: center; /* Centers the heading */
+        margin-top: 20px; /* Adds space above the heading */
+        font-size: 2.5em; /* Increases the size of the heading text */
     }
 </style>
+
 
 <body>
     <!-- Main container for the pricing cards -->

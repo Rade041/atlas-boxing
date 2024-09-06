@@ -37,7 +37,6 @@
 </main>
 
 <br />
-
 <head>
     <!-- Inline CSS styling for layout and design -->
     <style>
@@ -45,6 +44,8 @@
         .schedule-column {
             float: left;
             width: 33.33%;
+            padding: 10px; /* Adds space between columns */
+            box-sizing: border-box; /* Ensures padding doesn't affect the overall width */
         }
 
         /* Ensures content is cleared and elements are properly contained within rows */
@@ -57,12 +58,13 @@
         /* Styling for each schedule card */
         .schedule-card {
             border-radius: 9px;
-            background-color: #f9d9d9;
+            background-color: #C91616;
             display: flex;
             margin-top: 22px;
-            width: 100%;
+            width: 100%; /* Takes full width of the parent column */
             flex-direction: column;
             padding: 0 20px 41px;
+            box-sizing: border-box; /* Ensures padding doesn't affect the overall width */
         }
 
         /* Styling for the schedule day headers */
@@ -98,6 +100,7 @@
         }
     </style>
 </head>
+
 
 <body>
     <!-- Container for the schedule cards -->
