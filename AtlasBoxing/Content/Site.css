@@ -1,9 +1,10 @@
-﻿
-.body-content {
+﻿.body-content {
     margin-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 100px;
 }
+ 
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -20,20 +21,20 @@ textarea {
 }
 
 
-/* Footer styling */
 footer {
-    display: flex !important; /* Align items in a horizontal row */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex; /* Align items in a horizontal row */
     justify-content: space-between; /* Space between copyright text and social icons */
     align-items: center; /* Vertically center the content */
     padding: 10px 20px; /* Padding for spacing */
-    background-color: / /*#f8f9fa*/ #1C211D; /* Optional: Footer background color */
+    background-color: #f8f9fa; /* Footer background color */
     box-sizing: border-box; /* Ensure padding is included in the element's total width/height */
     width: 100%; /* Ensure footer takes full width */
-    position: relative;
-    bottom: 0; /* Aligns the footer to the bottom of the page */
-
+    z-index: 1000;
 }
-
+ 
 /* Copyright styling for footer */
 .footer-copyright {
     margin-left: 20px; /* Ensure consistent spacing from the left end */
